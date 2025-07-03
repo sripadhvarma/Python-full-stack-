@@ -1,0 +1,6 @@
+a=bool(input("enter value of a:"))
+b=bool(input("enter value of b:"))
+print("a&b:",a and b)
+print("a|b:",a or b)
+print("!a:", not a)
+print("!b:", not b)
