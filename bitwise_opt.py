@@ -1,6 +1,6 @@
-a=bool(input("enter value of a:"))
-b=bool(input("enter value of b:"))
-print("a&b:",a and b)
-print("a|b:",a or b)
-print("!a:", not a)
-print("!b:", not b)
+for i in range(1,11):
+    n=int(input("enter value:"))
+    if(n==36):
+        print("you guessed it right!!")
+    else:
+        print("try again")

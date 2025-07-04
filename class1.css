@@ -1,0 +1,17 @@
+.heading{
+    color:rgb(0, 0, 0);
+    font-family:Arial, Helvetica, sans-serif;
+}
+.paragraph{
+    color:rgb(51, 79, 79);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.button{
+    color: rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+    background-color: chartreuse;
+    shape-margin: 10%;
+}
+.main{
+    font-display:center;
+}
