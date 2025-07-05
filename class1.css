@@ -13,5 +13,9 @@
     shape-margin: 10%;
 }
 .main{
-    font-display:center;
+    text-align: center;
+    background-size: cover;
+    width: 250px;
+    height: 200px;
+    background-image:url("https://d2clawv67efefq.cloudfront.net/ccbp-static-website/ocean.jpg");
 }
