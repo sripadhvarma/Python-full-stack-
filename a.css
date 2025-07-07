@@ -1,0 +1,21 @@
+.outerdiv{
+    height: 25px;
+    background-color: rgb(23, 14, 14);
+    border: 3px solid yellowgreen;
+}
+#a{
+    color: rgb(255, 236, 63);
+    margin-right: 200px;
+}
+.a{
+    margin-left: 50px;
+    margin-right: 200px;
+    color: aliceblue;
+}
+#search{
+    background-color:rgb(255, 236, 63);
+}
+.innerdiv{
+    margin-left: 250px;
+
+}

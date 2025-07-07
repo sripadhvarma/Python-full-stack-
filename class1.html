@@ -3,15 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="class1.css">
+    <title>LinkedIn Style Navbar</title>
+    <style>
+        #first {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            background-color: #ffffff;
+            border: 1px solid #150f0f;
+            color: #333;
+            padding: 10px 30px;
+            border-radius: 30px;
+        }
+         #first img.logo {
+            height: 50px;
+            width: 50px;
+        }
+
+       #first input[type="search"] {
+            font-size: 16px;
+            padding: 5px 10px;
+            border: 1px solid #150f0f;
+            border-radius: 15px;
+            width: 300px;
+            margin-right: 30px;
+            outline: none;
+        }
+        #first nav ul {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        #first nav ul li {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 12px;
+            color: #333;
+        }
+        #first nav ul li img {
+            height: 28px;
+            width: 28px;
+            margin-bottom: 2px;
+        }
+        /*#first nav ul li span {
+            margin-top: 2px;
+        }
+        #first nav ul li a {
+            text-decoration: none;
+            color: inherit;
+        }
+        #first nav ul li a:focus,
+        #first nav ul li a:hover {
+            color: #0077b5;
+        } */
+    </style>
 </head>
 <body>
-    <div>
-        <p id="box">Hi</p>
-        <h1 class="heading">hello</h1>
-        <h2 class="heading">namaste</h2>
-        <h3 class="heading">adab</h3>
+    <div id="first">
+        <img class="logo" src="https://static.vecteezy.com/system/resources/previews/018/910/721/original/linkedin-logo-linkedin-symbol-linkedin-icon-free-free-vector.jpg" alt="linkedin logo">
+        <input id="search" type="search" placeholder="Search">
+        <nav>
+            <ul>
+                <li>
+                    <a href="#"><img src="icons8-home-50.png" alt="Home"></a>
+                    <span>Home</span>
+                </li>
+                <li>
+                    <a href="#"><img src="information-button.png" alt="About"></a>
+                    <span>About</span>
+                </li>
+                <li>
+                    <a href="#"><img id="contact-icon" src="phone.png" alt="Contact"></a>
+                    <span>Contact</span>
+                </li>
+            </ul>
+        </nav>
     </div>
-</body>
-</html>
