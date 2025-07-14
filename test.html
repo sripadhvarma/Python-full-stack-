@@ -1,0 +1,117 @@
+<!-- flex with grid-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        .gridcontainer{
+            display: grid;
+            grid-template-rows: auto auto auto  ;
+            grid-template-columns: auto  auto  ;
+            justify-content:center;
+            column-gap: 0px;
+            row-gap: 0px;
+            
+        }
+        .gridcontainer >div{
+           
+            
+           /* row-gap: 10px;*/
+           
+            font-size: 10px;
+            text-align: center;
+            text-transform:uppercase;
+        }
+        .a{
+             border: 5px solid black;
+             height: 100px;
+            grid-row-start: 1 ;
+            grid-column-start: 1;
+            grid-row-end:1 ;
+            grid-column-end: 3;
+           
+        }
+        .b{
+             border: 5px solid black;
+             width: 300px;
+             height: 500px;
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            grid-column-end: 1;
+        }
+        .c{
+            border: 5px solid black;
+            width: 500px;
+            height: 340px;
+        }
+        .d{
+            border: 5px solid black;
+            height: 150px;
+        }
+        .a>.ag{
+           
+            
+            font-size: 15px;
+            text-align: left;
+        }
+        .flex{
+            display: flex;
+            flex-direction: row;
+            background-color: aliceblue;
+            justify-content: space-between;
+        }
+        img{
+            width: 100px;
+        }
+        .b1>p{
+            font-size: 20px;
+            color: whitesmoke;
+            background-color: black;
+            border-radius: 10px;
+            margin: 10px 20px; 
+            padding: 10px;
+        }
+        .ag{
+            font-size: 15px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="gridcontainer">
+        <div class="a">
+            <div class="flex">
+            <div class="ag">
+                <strong> <p>name <br> number <br>email <br> address</p></strong>
+            
+            </div>
+            <div class="ag">
+               <strong><p> college name <br> branch</p></strong> 
+            </div>
+            <div class="ag">
+                <img src="/img/pro.jpeg" alt="">
+            </div>
+           
+            
+           </div>
+        </div>
+        <div class="b" style="background-color: whitesmoke;">
+            <h1>skills</h1>
+            <div class="b1">
+            <p>html <p>css</p> <p>java script</p> <p>java</p> <p>mysql</p> <p>bootspring</p> <p>python</p>
+            </div>
+        </div>
+        <div class="c" style="background-color: honeydew;">
+            <h1>projects</h1>
+            <p style="font-size: 20px;">project1 <br>    <br> project2 <br> <br>project3</p>
+        </div>
+        <div class="d" style="background-color: lightsteelblue;">
+            <h1>achivements</h1>
+        </div>
+       
+    </div>
+</body>
+</html>
