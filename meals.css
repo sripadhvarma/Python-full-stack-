@@ -1,0 +1,14 @@
+.meals{
+    background-image: url("https://d2clawv67efefq.cloudfront.net/ccbp-static-website/foodbg.png");
+    height:700px;
+    width:500px;
+}
+.text{
+    font-weight:400;
+    background-color: rgb(223, 203, 58);
+    padding-bottom: 20px;
+    font-style:italic;
+}
+.btn{
+    color: white;
+}
