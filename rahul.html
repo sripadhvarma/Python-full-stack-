@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tourism</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <style>
+    .bg-container {
+      background-image: url("https://cdn.britannica.com/31/1631-050-23506727/vegetation-waterways-state-Kerala-India.jpg");
+      height: 100vh;
+      background-size: cover;
+      text-align: center;
+      padding: 5px;
+      border-top-left-radius: 55px;
+      border-top-right-radius: 55px;
+      color: black;
+    }
+
+    .heading, .para {
+      font-family: "Roboto";
+    }
+
+    .button {
+      height: 30px;
+      width: 136px;
+      background-color: #25b1cc;
+      color: white;
+      border-radius: 20px;
+      border-width: 0px;
+    }
+
+    .favorite-place-bg-container {
+      background-image: url("https://c0.wallpaperflare.com/preview/913/700/937/sky-clouds-blue-skies.jpg");
+      height: 100vh;
+      background-size: cover;
+    }
+
+    .favorite-place-heading {
+      color: white;
+      font-size: 28px;
+      font-family: "Roboto";
+      padding: 24px;
+      font-weight: bold;
+    }
+
+    .favorite-place-card-container {
+      background-color: white;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+
+    .favorite-place-card-heading {
+      color: black;
+      font-family: "Roboto";
+      font-size: 40px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .favorite-place-card-description {
+      font-size: 23px;
+      font-family: "Roboto";
+      color: grey;
+    }
+
+    .card-image {
+      height: 100px;
+      width: 80px;
+      border-radius: 5px;
+    }
+
+    .detailed-view-bg-container {
+      background-image: url("https://d2clawv67efefq.cloudfront.net/ccbp-static-website/seabg.png");
+      padding: 24px;
+      background-size: cover;
+    }
+
+    .detailed-view-card-heading {
+      font-family: "Roboto";
+      font-size: 20px;
+      color: white;
+      font-weight: bold;
+    }
+
+    .detailed-view-card-container {
+      background-color: white;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      margin: 15px;
+    }
+
+    .detailed-view-card1-heading {
+      color: #0f0e46;
+      font-size: 23px;
+      font-family: "Roboto";
+      font-weight: bold;
+    }
+
+    .detailed-view-card-description {
+      color: #6c6b70;
+      font-family: "Roboto";
+      font-size: 14px;
+    }
+
+    .detailed-view-card3-container {
+      padding: 16px;
+    }
+
+    .unordered-list {
+      list-style-type: square;
+    }
+
+    .back-button {
+      background-color: transparent;
+      color: white;
+      border: 1px solid white;
+      border-radius: 5px;
+      padding: 5px 12px;
+      margin-bottom: 16px;
+      cursor: pointer;
+    }
+
+    .back-button:hover {
+      background-color: white;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Home Section -->
+  <div id="sectionHome">
+    <div class="bg-container d-flex flex-column justify-content-center">
+      <div class="Tourism">
+        <h1 class="heading">Tourism</h1>
+        <p class="para">Plan your trip</p>
+        <button class="button" onclick="display('sectionFavoriteplaces')">Start</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Favorite Places Section -->
+  <div id="sectionFavoriteplaces" style="display: none;">
+    <div class="favorite-place-bg-container">
+      <h1 class="favorite-place-heading">Favorite Places</h1>
+
+      <div class="favorite-place-card-container d-flex flex-row">
+        <div>
+          <h1 class="favorite-place-card-heading" onclick="display('sectionTajmahal')">Taj Mahal</h1>
+          <p class="favorite-place-card-description">A timeless symbol of love and India's pride</p>
+        </div>
+        <img src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/tajmahal-img.png" class="card-image"/>
+      </div>
+
+      <div class="favorite-place-card-container d-flex flex-row">
+        <div>
+          <h1 class="favorite-place-card-heading" onclick="display('sectionGoldenTemple')">Golden Temple</h1>
+          <p class="favorite-place-card-description">Spiritual serenity and architectural beauty</p>
+        </div>
+        <img src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/golden-temple-img.png" class="card-image"/>
+      </div>
+
+      <div class="favorite-place-card-container d-flex flex-row">
+        <div>
+          <h1 class="favorite-place-card-heading" onclick="display('sectionMysorepalace')">Mysore Palace</h1>
+          <p class="favorite-place-card-description">A royal heritage and majestic architecture</p>
+        </div>
+        <img src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/mysore-palace-img.png" class="card-image"/>
+      </div>
+
+      <div class="favorite-place-card-container d-flex flex-row">
+        <div>
+          <h1 class="favorite-place-card-heading" onclick="display('sectionVaranasi')">Varanasi Temple</h1>
+          <p class="favorite-place-card-description">The spiritual capital of India</p>
+        </div>
+        <img src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/varanasi-temple-img.png" class="card-image"/>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Detailed Views -->
+
+  <!-- Taj Mahal -->
+  <div id="sectionTajmahal" style="display: none;" class="detailed-view-bg-container">
+    <h1 class="detailed-view-card-heading">Detailed View</h1>
+    <button class="back-button" onclick="display('sectionFavoriteplaces')">← Back</button>
+    <div class="detailed-view-card-container">
+      <!-- Carousel -->
+      <!-- (same as before) -->
+      <div class="detailed-view-card3-container">
+        <h1 class="detailed-view-card1-heading">Taj Mahal</h1>
+        <p class="detailed-view-card-description">The Taj Mahal is the finest example of Mughal architecture...</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Golden Temple -->
+  <div id="sectionGoldenTemple" style="display: none;" class="detailed-view-bg-container">
+    <h1 class="detailed-view-card-heading">Detailed View</h1>
+    <button class="back-button" onclick="display('sectionFavoriteplaces')">← Back</button>
+    <div class="detailed-view-card-container">
+      <!-- Carousel -->
+      <!-- (same as before) -->
+      <div class="detailed-view-card3-container">
+        <h1 class="detailed-view-card1-heading">Golden Temple</h1>
+        <p class="detailed-view-card-description">The Golden Temple is the holiest Gurdwara of Sikhism...</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mysore Palace -->
+  <div id="sectionMysorepalace" style="display: none;" class="detailed-view-bg-container">
+    <h1 class="detailed-view-card-heading">Detailed View</h1>
+    <button class="back-button" onclick="display('sectionFavoriteplaces')">← Back</button>
+    <div class="detailed-view-card-container">
+      <!-- Carousel -->
+      <!-- (same as before) -->
+      <div class="detailed-view-card3-container">
+        <h1 class="detailed-view-card1-heading">Mysore Palace</h1>
+        <p class="detailed-view-card-description">Mysore Palace is one of the grandest royal buildings in India...</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Varanasi -->
+  <div id="sectionVaranasi" style="display: none;" class="detailed-view-bg-container">
+    <h1 class="detailed-view-card-heading">Detailed View</h1>
+    <button class="back-button" onclick="display('sectionFavoriteplaces')">← Back</button>
+    <div class="detailed-view-card-container">
+      <!-- Carousel -->
+      <!-- (same as before) -->
+      <div class="detailed-view-card3-container">
+        <h1 class="detailed-view-card1-heading">Varanasi</h1>
+        <p class="detailed-view-card-description">Varanasi is one of the oldest continuously inhabited cities in the world...</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Display Logic Script -->
+  <script>
+    function display(id) {
+      const sections = [
+        'sectionHome',
+        'sectionFavoriteplaces',
+        'sectionTajmahal',
+        'sectionGoldenTemple',
+        'sectionMysorepalace',
+        'sectionVaranasi'
+      ];
+      sections.forEach(sec => {
+        document.getElementById(sec).style.display = 'none';
+      });
+      document.getElementById(id).style.display = 'block';
+    }
+
+    window.onload = function () {
+      display('sectionHome');
+    };
+  </script>
+
+</body>
+</html>
